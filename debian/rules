@@ -1,0 +1,14 @@
+#!/usr/bin/make -f
+
+include /usr/share/cdbs/1/rules/buildcore.mk
+include /usr/share/cdbs/1/rules/debhelper.mk
+include /usr/share/cdbs/1/rules/simple-patchsys.mk
+
+clean::
+	rm -f kladr-query kladr-info
+
+common-install-arch::
+	install -d debian/sqlite3-kladr/usr/bin/
+	gcc -g -O2 -std=gnu99 -lsqlite3 -o kladr-query kladr-query.c
+	gcc -g -O2 -std=gnu99 -lsqlite3 -o kladr-info kladr-info.c
+	install -m 755 kladr-query kladr-info debian/sqlite3-kladr/usr/bin/

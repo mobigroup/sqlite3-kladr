@@ -1,0 +1,14 @@
+Source: sqlite3-kladr
+Section: devel
+Priority: optional
+Maintainer: Alexey Pechnikov (MBG) <pechnikov@mobigroup.ru>
+Build-Depends: cdbs (>= 0.4.15), debhelper (>= 4.1.16), libsqlite3-dev
+Standards-Version: 3.8.3
+
+Package: sqlite3-kladr
+Section: misc
+Architecture: any
+Depends: ${shlibs:Depends},  libsqlite3-0, sqlite3-kladr-data
+Recommends: sqlite3
+Description: A КЛАДР utils
+ The package provide a search utils for Russian Federation KLADR (КЛАДР) address database.

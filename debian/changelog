@@ -1,0 +1,11 @@
+sqlite3-kladr (2010.08.08) unstable; urgency=low
+
+  * Fix kladr-query error processing town query
+
+ -- Alexey Pechnikov <pechnikov@mobigroup.ru>  Sun, 08 Aug 2010 23:15:45 +0400
+
+sqlite3-kladr (2010.01.16) unstable; urgency=low
+
+  * Initial release.
+
+ -- Alexey Pechnikov <pechnikov@mobigroup.ru>  Sat, 16 Jan 2010 08:26:44 +0300
